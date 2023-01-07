@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNSバナー｜制作実績　Sakura Ninomiya PORTFOLIO</title>
+    <meta name="description" content="制作実績の詳細です。">
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 桜散る -->
+    <ul class="sakura_works">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <header id="header">
+        <div class="header_wrap">
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="./index.html#about">私について</a></li>
+                    <li><a href="./index.html#skill">できること</a></li>
+                    <li><a href="./index.html#works">制作実績</a></li>
+                    <li><a href="./index.html#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="sp_btn"><span></span></div>
+        </div>
+
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="./index.html#about">私について</a></li>
+                <li><a href="./index.html#skill">できること</a></li>
+                <li><a href="./index.html#works">制作実績</a></li>
+                <li><a href="./index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section_inner_works">
+            <div id="works_results">
+                <div class="title_detail">
+                    <div class="works_title">
+                        <img src="images/obi_pc.png" alt="">
+                        <h1>SNSバナー</h1>
+                    </div>
+                    <div class="heading">
+                        <p>デザイン</p>
+                    </div>
+                </div>
+                <p class="works_detail">
+                    Instagramに掲載するオーガニックコスメのバナーをデザインしました。<br>
+                    ナチュラルな世界観を意識してフォントと色味を選定しました。
+                </p>
+                <div class="works3_img">
+                    <img src="images/works_3_pc.jpg" alt="">
+                </div>
+
+                <div class="backBtn_works">
+                    <a href="./index.html#works">
+                        <img src="images/back_btn.png" alt="戻るボタン">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_wrap">
+            <picture>
+                <source srcset="images/usagi_3_sp.jpg" media="(max-width: 767px)">
+                <img src="images/usagi_3_pc.jpg" alt="">
+            </picture>
+            <div class="footer_copy">
+                <p>&copy; 2022 Sakura Ninomiya PORTFOLIO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            // ハンバーガーメニュー
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+
+            // ヘッダー固定
+            var _window = $(window),
+                _header = $('#header'),
+                heroBottom;
+
+            _window.on('scroll', function () {
+                heroBottom = $('.works_title').height();
+                if (_window.scrollTop() > heroBottom) {
+                    _header.addClass('transform');
+                }
+                else {
+                    _header.removeClass('transform');
+                }
+            });
+            _window.trigger('scroll');
+        });
+    </script>
+</body>
+
+</html>
