@@ -497,7 +497,7 @@ html {
 
 input[id="your_name"],
 input[id="your_email"],
-input[id="your_message"] {
+textarea[id="your_message"] {
     border-radius: 0;
 }
 
