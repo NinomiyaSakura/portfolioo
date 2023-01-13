@@ -471,6 +471,7 @@ html {
     box-sizing: border-box;
     font-size: 14px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    border-radius: none;
 }
 
 #your_email {
@@ -482,6 +483,7 @@ html {
     box-sizing: border-box;
     font-size: 14px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    border-radius: none;
 }
 
 #your_message {
@@ -493,6 +495,7 @@ html {
     box-sizing: border-box;
     font-size: 14px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    border-radius: none;
 }
 
 .btn {
