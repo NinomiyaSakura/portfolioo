@@ -471,8 +471,6 @@ html {
     box-sizing: border-box;
     font-size: 14px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
-    -webkit-appearance: none;
-    border-radius: none;
 }
 
 #your_email {
@@ -484,8 +482,6 @@ html {
     box-sizing: border-box;
     font-size: 14px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
-    -webkit-appearance: none;
-    border-radius: none;
 }
 
 #your_message {
@@ -497,8 +493,13 @@ html {
     box-sizing: border-box;
     font-size: 14px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+}
+
+input[id="your_name"],
+input[id="your_email"],
+input[id="your_message"] {
     -webkit-appearance: none;
-    border-radius: none;
+    border-radius: 0;
 }
 
 .btn {
