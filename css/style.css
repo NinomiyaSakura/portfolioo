@@ -498,7 +498,6 @@ html {
 input[id="your_name"],
 input[id="your_email"],
 input[id="your_message"] {
-    -webkit-appearance: none;
     border-radius: 0;
 }
 
