@@ -308,7 +308,8 @@ html {
     font-size: 14px;
     line-height: 2.5;
     letter-spacing: 0.025em;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
 
 #skill {
@@ -344,7 +345,8 @@ html {
 .design p {
     font-size: 14px;
     line-height: 1.8;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     text-align: left;
 }
 
@@ -368,7 +370,8 @@ html {
 .coding p {
     font-size: 14px;
     line-height: 1.8;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     text-align: left;
     padding-top: 20px;
 }
@@ -470,7 +473,8 @@ html {
     padding: 20px;
     box-sizing: border-box;
     font-size: 14px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     border-radius: 0;
 }
 
@@ -482,7 +486,8 @@ html {
     padding: 20px;
     box-sizing: border-box;
     font-size: 14px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     border-radius: 0;
 }
 
@@ -494,7 +499,8 @@ html {
     padding: 20px;
     box-sizing: border-box;
     font-size: 14px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     border-radius: 0;
 }
 
@@ -914,7 +920,8 @@ html {
 .works_detail {
     font-size: 14px;
     line-height: 1.8;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic";
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
     padding-bottom: 50px;
     text-align: left;
 }
