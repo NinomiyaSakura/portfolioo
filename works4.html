@@ -20,6 +20,11 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -63,9 +68,18 @@
                     キャンペーン広告を一番目立たせ、予約を促す工夫をしました。<br>
                     メニューボタンにはひと言ずつコメントを入れることで、クリックしてもらえるよう工夫しました。
                 </p>
-                <div class="works4_img">
-                    <img src="images/works_4_pc.jpg" alt="">
-                </div>
+                <ul class="works_slider">
+                    <li class="works4_img">
+
+                        <img src="images/works_4_pc.jpg" alt="店内の様子">
+
+                    </li>
+                    <li class="works4_richmenu">
+
+                        <img src="images/works4_richmenu.jpg" alt="店内の様子">
+
+                    </li>
+                </ul>
 
                 <div class="backBtn_works">
                     <a href="./index.html#works">
@@ -111,6 +125,15 @@
                 }
             });
             _window.trigger('scroll');
+
+            // スライダー
+            $('.works_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+                arrows: false,
+
+            });
         });
     </script>
 </body>
