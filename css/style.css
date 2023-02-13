@@ -683,7 +683,7 @@ html {
         width: 10px;
     }
 
-    .col {
+    #about {
         display: block;
         background-image: url("../images/usagi_1_sp.png");
         background-repeat: no-repeat;
