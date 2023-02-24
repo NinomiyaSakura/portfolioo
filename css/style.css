@@ -830,7 +830,19 @@ html {
 }
 
 .works4_img {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+}
+
+.works4_img img {
+    width: 400px;
+}
+
+.works4_richmenu {
+    padding-bottom: 50px;
+}
+
+.works4_richmenu img {
+    width: 400px;
 }
 
 .backBtn_works {
