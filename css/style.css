@@ -111,65 +111,41 @@ html {
 }
 
 .caption_name {
-    display: flex;
-    align-items: center;
-    padding-bottom: 30px;
-    letter-spacing: 0.05em;
-    font-size: 20px;
-}
-
-.caption_name {
-    font-size: 26px;
     text-align: center;
-    margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 #about {
-    padding-top: 90px;
+    padding: 70px 0;
     text-align: center;
-}
-
-.col {
-    display: flex;
-    align-items: center;
-}
-
-.col img {
-    width: 500px;
-}
-
-.col p {
-    width: 500px;
-    padding-left: 20px;
-    font-size: 14px;
-    line-height: 2.5;
-    letter-spacing: 0.025em;
+    background: #f0e7fb;
 }
 
 #service {
-    padding-top: 100px;
+    padding: 70px 0;
+    background: #e1edf3;
 }
 
 .service_content {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
-#works {
-    padding-top: 160px;
-    margin-bottom: 160px;
+.sub_title {
+    padding-bottom: 30px;
+    font-weight: lighter;
+}
+
+.service_detail {
+    font-size: 14px;
+    line-height: 1.8;
+    text-align: left;
 }
 
 .webdesign {
-    max-width: 500px;
-    margin: 0 auto;
+    width: 40%;
     text-align: center;
     padding: 0 20px;
-}
-
-.webdesign h3 {
-    font-weight: lighter;
-    padding-bottom: 20px;
 }
 
 .webdesign img {
@@ -177,22 +153,10 @@ html {
     padding-bottom: 20px;
 }
 
-.webdesign p {
-    font-size: 14px;
-    line-height: 1.8;
-    text-align: left;
-}
-
 .graphicdesign {
-    max-width: 500px;
-    margin: 0 auto;
+    width: 40%;
     text-align: center;
     padding: 0 20px;
-}
-
-.graphicdesign h3 {
-    font-weight: lighter;
-    padding-bottom: 20px;
 }
 
 .graphicdesign img {
@@ -200,10 +164,8 @@ html {
     padding-bottom: 20px;
 }
 
-.graphicdesign p {
-    font-size: 14px;
-    line-height: 1.8;
-    text-align: left;
+#works {
+    padding: 100px 0;
 }
 
 .works_content {
@@ -444,6 +406,12 @@ footer {
     }
 }
 
+@media screen and (min-width: 768px) {
+    .br_sp {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .pc_nav {
         display: none;
@@ -513,10 +481,7 @@ footer {
         left: 0;
         width: 100%;
         height: 100vh;
-        background-image: url("../images/hamburger_menu.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        background: #f0e7fb;
         z-index: 1;
     }
 
@@ -529,78 +494,43 @@ footer {
     }
 
     .sp_nav ul li {
-        padding: 20px 0;
+        padding: 40px 0;
         color: #444;
-        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 0.2em;
     }
 
     .section_inner {
         padding: 0 20px;
     }
 
-    .concept_1 {
-        position: absolute;
-        top: 30%;
-        left: auto;
-        right: 25%;
+    h1 {
+        font-size: 20px;
     }
 
-    .concept_1 img {
-        max-width: initial;
-        width: 36px;
-    }
-
-    .concept_2 {
-        position: absolute;
-        top: 40%;
-        left: auto;
-        right: 32%;
-        width: 14px;
-    }
-
-    .concept_2 img {
-        max-width: initial;
-        width: 14px;
-    }
-
-    .concept_2::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        filter: blur(5px);
-        background: rgb(237 238 244);
-        z-index: -1;
-    }
-
-    .title img {
-        width: 10px;
-    }
-
-    #about {
-        display: block;
-        background-image: url("../images/usagi_1_sp.png");
-        background-repeat: no-repeat;
-        background-position: right 0 bottom 0;
-        background-size: 300px;
-    }
-
-    .col img {
-        display: none;
-    }
-
-    .col p {
-        width: initial;
+    .concept {
+        font-size: 14px;
     }
 
     .service_content {
         display: block;
     }
 
+    #about {
+        padding: 50px 0;
+    }
+
+    #service {
+        padding: 50px 0;
+    }
+
     .webdesign {
-        margin: 40px 0 70px 0;
+        width: 90%;
+        padding-bottom: 60px;
+    }
+
+    .graphicdesign {
+        width: 90%;
     }
 
     .works_content {
@@ -635,30 +565,6 @@ footer {
 
     .footer_copy {
         font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .concept_1 {
-        position: absolute;
-        top: 35%;
-    }
-
-    .concept_2 {
-        position: absolute;
-        top: 44%;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .concept_1 {
-        position: absolute;
-        top: 50%;
-    }
-
-    .concept_2 {
-        position: absolute;
-        top: 59%;
     }
 }
 
