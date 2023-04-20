@@ -20,194 +20,199 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="first_view"></div>
-
-        <header id="header">
-            <div class="header_wrap">
-                <nav class="pc_nav">
-                    <ul>
-                        <li><a href="#service">Service</a></li>
-                        <li><a href="#works">Works</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <div class="sp_btn"><span></span></div>
-            </div>
-
-            <nav class="sp_nav">
+    <header id="header">
+        <div class="header_wrap">
+            <nav class="pc_nav">
                 <ul>
                     <li><a href="#service">Service</a></li>
                     <li><a href="#works">Works</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        </header>
 
-        <main>
-            <section id="about">
-                <div class="section_inner">
-                    <h1>Bouquet for casual everyday life</h1><br>
-                    <p class="concept">“何気ない日常に花束を”</p><br>
-                    <p class="concept">日々の日常がちょっと楽しくなるような、<br class="br_sp">そんなデザインを作ります。</p>
-                </div>
-            </section>
+            <div class="sp_btn"><span></span></div>
+        </div>
 
-            <section id="service">
-                <div class="section_inner">
-                    <h2 class="caption_name">Service</h2>
-                    <div class="service_content">
-                        <div class="webdesign">
-                            <h3 class="sub_title">Webデザイン</h3>
-                            <img src="images/web design@2x.png" alt="マウス">
-                            <p class="service_detail">
-                                コーポレートサイトやLPサイなど、Web系のデザインを承ります。お客様が抱える課題や想いに寄り添い、目的に合ったデザインを構築いたします。サイト制作はHTML・CSSを用いて行います。スマートフォンに対応したサイトやJavaScript・jQueryを用いた動きのあるサイト制作も可能です。
-                            </p>
-                        </div>
-                        <div class="graphicdesign">
-                            <h3 class="sub_title">Graphicデザイン</h3>
-                            <img src="images/graphic design@2x.png" alt="ノート">
-                            <p class="service_detail">
-                                名刺やショップカード、チラシやロゴなどの紙媒体のデザインを承ります。お客様の想いや要望に寄り添い、目的に合ったデザインを制作いたします。Photoshop・Illustratorを用いて、幅広いデザインに対応いたします。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <section id="works">
-                <div class="section_inner">
-                    <h2 class="caption_name">Works</h2>
-                    <div class="works_content">
-                        <div class="clamp_1">
-                            <div class="banner_1">
-                                <a href="./works1.html"><img src="images/works1_1@2x-100.jpg" alt="works1">
-                                    <p>Webサイト</p>
-                                </a>
-                            </div>
+    <div id="first_view"></div>
 
-                            <div class="banner_2">
-                                <a href="./works2.html"><img src="images/works2@2x.jpg" alt="works2">
-                                    <p>バナー</p>
-                                </a>
-                            </div>
-
-                            <div class="banner_5">
-                                <a href="./works5.html"><img src="images/works5_1@2x-100.jpg" alt="works2">
-                                    <p>Webサイト</p>
-                                </a>
-                            </div>
-
-                            <div class="banner_7">
-                                <a href="./works7.html"><img src="images/works7_1@2x.jpg" alt="works7">
-                                    <p>リーフレット</p>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="clamp_2">
-                            <div class="banner_3">
-                                <a href="./works3.html"><img src="images/works3@2x-100.jpg" alt="works3">
-                                    <p>イラスト</p>
-                                </a>
-                            </div>
-
-                            <div class="banner_4">
-                                <a href="./works4.html"><img src="images/works4_1@2x.jpg" alt="works4">
-                                    <p>LINEリッチメニュー</p>
-                                </a>
-                            </div>
-
-                            <div class="banner_6">
-                                <a href="./works6.html"><img src="images/works6_1@2x.jpg" alt="works5">
-                                    <p>ロゴ</p>
-                                </a>
-                            </div>
-
-                            <div class="banner_8">
-                                <a href="./works8.html"><img src="images/works8@2x.jpg" alt="works8">
-                                    <p>ショップカード</p>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact">
-                <div class="section_inner">
-                    <h2 class="caption_name">Contact</h2>
-
-                    <form
-                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHBgWTV-Al5N1cs6ETDkc0jGrP1zx__3tztRgqKOLFdINA0g/formResponse"
-                        method="post" target="hidden_iframe" onsubmit="submitted=true;">
-
-                        <div class="contact_form">
-                            <div class="contact_field">
-                                <input id="your_name" type="text" name="entry.913581744" required="required"
-                                    placeholder="お名前">
-                            </div>
-
-                            <div class="contact_field">
-                                <input id="your_email" type="email" name="entry.1477878430" required="required"
-                                    placeholder="メールアドレス">
-                            </div>
-
-                            <div class="contact_field">
-                                <textarea id="your_message" class="materialize-textarea" name="entry.519996697"
-                                    required="required" placeholder="お問い合わせ内容"></textarea>
-                            </div>
-
-                            <button type="submit" class="btn">
-                                問い合わせる
-                            </button>
-                        </div>
-                    </form>
-                    <!-- サンキューページ -->
-                    <script>var submitted = false;</script>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
-                        onload="if(submitted){window.location='thanks.html';}"></iframe>
-                </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="footer_wrap">
-                <p class="footer_copy">
-                    &copy; 2022 Sakura Ninomiya PORTFOLIO</p>
+    <main>
+        <section id="about">
+            <div class="section_inner">
+                <h1>Bouquet for casual everyday life</h1><br>
+                <p class="concept">“何気ない日常に花束を”</p><br>
+                <p class="concept">日々の日常がちょっと楽しくなるような、<br class="br_sp">そんなデザインを作ります。</p>
             </div>
-        </footer>
+        </section>
 
-        <script>
-            $(function () {
-                // ハンバーガーメニュー
-                $('.sp_btn, .sp_nav li').on('click', function () {
-                    $('.sp_nav').fadeToggle();
-                    $('.sp_btn').toggleClass('open');
-                });
+        <section id="service">
+            <div class="section_inner">
+                <h2 class="caption_name">Service</h2>
+                <div class="service_content">
+                    <div class="webdesign">
+                        <h3 class="sub_title">Webデザイン</h3>
+                        <img src="images/web design@2x.png" alt="マウス">
+                        <p class="service_detail">
+                            コーポレートサイトやLPサイなど、Web系のデザインを承ります。お客様が抱える課題や想いに寄り添い、目的に合ったデザインを構築いたします。サイト制作はHTML・CSSを用いて行います。スマートフォンに対応したサイトやJavaScript・jQueryを用いた動きのあるサイト制作も可能です。
+                        </p>
+                    </div>
+                    <div class="graphicdesign">
+                        <h3 class="sub_title">Graphicデザイン</h3>
+                        <img src="images/graphic design@2x.png" alt="ノート">
+                        <p class="service_detail">
+                            名刺やショップカード、チラシやロゴなどの紙媒体のデザインを承ります。お客様の想いや要望に寄り添い、目的に合ったデザインを制作いたします。Photoshop・Illustratorを用いて、幅広いデザインに対応いたします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                // ヘッダー固定
-                var _window = $(window),
-                    _header = $('#header'),
-                    heroBottom;
+        <section id="works">
+            <div class="section_inner">
+                <h2 class="caption_name">Works</h2>
+                <div class="works_content">
+                    <div class="clamp_1">
+                        <div class="banner_1">
+                            <a href="./works1.html"><img src="images/works1_1@2x-100.jpg" alt="works1">
+                                <p>Webサイト</p>
+                            </a>
+                        </div>
 
-                _window.on('scroll', function () {
-                    heroBottom = $('.first_view').height();
-                    if (_window.scrollTop() > heroBottom) {
-                        _header.addClass('transform');
-                    }
-                    else {
-                        _header.removeClass('transform');
-                    }
-                });
-                _window.trigger('scroll');
+                        <div class="banner_2">
+                            <a href="./works2.html"><img src="images/works2@2x.jpg" alt="works2">
+                                <p>バナー</p>
+                            </a>
+                        </div>
+
+                        <div class="banner_5">
+                            <a href="./works5.html"><img src="images/works5_1@2x-100.jpg" alt="works2">
+                                <p>Webサイト</p>
+                            </a>
+                        </div>
+
+                        <div class="banner_7">
+                            <a href="./works7.html"><img src="images/works7_1@2x.jpg" alt="works7">
+                                <p>リーフレット</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="clamp_2">
+                        <div class="banner_3">
+                            <a href="./works3.html"><img src="images/works3@2x-100.jpg" alt="works3">
+                                <p>イラスト</p>
+                            </a>
+                        </div>
+
+                        <div class="banner_4">
+                            <a href="./works4.html"><img src="images/works4_1@2x.jpg" alt="works4">
+                                <p>LINEリッチメニュー</p>
+                            </a>
+                        </div>
+
+                        <div class="banner_6">
+                            <a href="./works6.html"><img src="images/works6_1@2x.jpg" alt="works5">
+                                <p>ロゴ</p>
+                            </a>
+                        </div>
+
+                        <div class="banner_8">
+                            <a href="./works8.html"><img src="images/works8@2x.jpg" alt="works8">
+                                <p>ショップカード</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section_inner">
+                <h2 class="caption_name">Contact</h2>
+                <p>当ポートフォリオサイトにご訪問いただき、誠にありがとうございます。<br>
+                    制作のご依頼やご質問など、まずは気軽にご相談ください。<br>
+                    3営業日以内にご連絡をさせていただきます。</p>
+
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScHBgWTV-Al5N1cs6ETDkc0jGrP1zx__3tztRgqKOLFdINA0g/formResponse"
+                    method="post" target="hidden_iframe" onsubmit="submitted=true;">
+
+                    <div class="contact_form">
+                        <div class="contact_field">
+                            <input id="your_name" type="text" name="entry.913581744" required="required"
+                                placeholder="お名前">
+                        </div>
+
+                        <div class="contact_field">
+                            <input id="your_email" type="email" name="entry.1477878430" required="required"
+                                placeholder="メールアドレス">
+                        </div>
+
+                        <div class="contact_field">
+                            <textarea id="your_message" class="materialize-textarea" name="entry.519996697"
+                                required="required" placeholder="お問い合わせ内容"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">
+                            問い合わせる
+                        </button>
+                    </div>
+                </form>
+                <!-- サンキューページ -->
+                <script>var submitted = false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                    onload="if(submitted){window.location='thanks.html';}"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_wrap">
+            <p class="footer_copy">
+                &copy; 2022 Sakura Ninomiya PORTFOLIO</p>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            // ハンバーガーメニュー
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
             });
-        </script>
-    </div>
+
+            // ヘッダー固定
+            var _window = $(window),
+                _header = $('#header'),
+                heroBottom;
+
+            _window.on('scroll', function () {
+                heroBottom = $('#first_view').height();
+                if (_window.scrollTop() > heroBottom) {
+                    _header.addClass('transform');
+                }
+                else {
+                    _header.removeClass('transform');
+                }
+            });
+            _window.trigger('scroll');
+
+
+        });
+    </script>
+
 </body>
 
 </html>
