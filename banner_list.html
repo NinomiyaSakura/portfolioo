@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>バナー実績一覧</title>
+    <meta name="description" content="バナー実績の一覧です。">
+    <!-- ファビコン -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="android-chrome-192x192.png">
+    <!-- Googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Parisienne&display=swap"
+        rel="stylesheet">
+    <!-- CSS読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_wrap">
+            <nav class="pc_nav">
+                <ul>
+                    <li><a href="./index.html#service">Service</a></li>
+                    <li><a href="./index.html#works">Works</a></li>
+                </ul>
+            </nav>
+
+            <div class="sp_btn"><span></span></div>
+        </div>
+
+        <nav class="sp_nav">
+            <ul>
+                <li><a href="./index.html#about">About</a></li>
+                <li><a href="./index.html#works">Works</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="works">
+            <div class="section_inner">
+                <h2 class="caption_name">Banner</h2>
+                <div class="works_content">
+                    <div class="clamp_1">
+                        <div class="banner_1">
+                            <a href="./banner_1.html"><img src="images/banner_1@2x.jpg" alt="バナー1">
+                                <p>脱毛サロンバナー</p>
+                            </a>
+                        </div>
+
+                        <div class="banner_2">
+                            <a href="./banner_2.html"><img src="images/banner_2@2x.jpg" alt="バナー2">
+                                <p>転職バナー</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="clamp_2">
+                        <div class="banner_3">
+                            <a href="./banner_3.html"><img src="images/banner_3@2x.jpg" alt="バナー3">
+                                <p>保証条件バナー</p>
+                            </a>
+                        </div>
+
+                        <div class="banner_4">
+                            <a href="./banner_4.html"><img src="images/banner_4@2x.jpg" alt="works5">
+                                <p>求人バナー</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="clamp_3">
+                        <div class="banner_5">
+                            <a href="./banner_5.html"><img src="images/banner_5@2x.jpg" alt="works7">
+                                <p>抽選会バナー</p>
+                            </a>
+                        </div>
+
+                        <div class="banner_6">
+                            <a href="./banner_6.html"><img src="images/banner_6.jpg" alt="works8">
+                                <p>母の日バナー</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a href="./index.html#works" class="backBtn">Back</a>
+    </main>
+
+    <footer>
+        <div class="footer_wrap">
+            <p class="footer_copy">
+                &copy; 2022 Sakura Ninomiya PORTFOLIO</p>
+        </div>
+    </footer>
+
+    <div class="glass_box"></div>
+
+    <script>
+        $(function () {
+            // ハンバーガーメニュー
+            $('.sp_btn, .sp_nav li').on('click', function () {
+                $('.sp_nav').fadeToggle();
+                $('.sp_btn').toggleClass('open');
+            });
+
+            // ヘッダー固定
+            var _window = $(window),
+                _header = $('#header'),
+                heroBottom;
+
+            _window.on('scroll', function () {
+                heroBottom = $('#first_view').height();
+                if (_window.scrollTop() > heroBottom) {
+                    _header.addClass('transform');
+                }
+                else {
+                    _header.removeClass('transform');
+                }
+            });
+            _window.trigger('scroll');
+
+
+        });
+    </script>
+
+</body>
+
+</html>

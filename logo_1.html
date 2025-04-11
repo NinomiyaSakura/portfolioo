@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LINEリッチメニュー｜制作実績　Sakura Ninomiya PORTFOLIO</title>
+    <title>PENTAROT｜制作実績　Sakura Ninomiya PORTFOLIO</title>
     <meta name="description" content="制作実績の詳細です。">
     <!-- ファビコン -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- slick slider読み込み -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
@@ -46,18 +47,26 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <div class="section_inner_works">
             <div id="works_results">
-                <h2 class="works_title">LINE Rich Menu</h2>
-                <div class="works2_img_1">
-                    <img src="images/linerichmenu1_1@2x.jpg" alt="">
-                </div>
+                <h2 class="works_title">Logo</h2>
+
+                <ul class="logo1_slider">
+                    <li>
+                        <img src="images/logo1_1@2x.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/logo1_2@2x.jpg" alt="">
+                    </li>
+                </ul>
+
                 <div class="works_outline">
-                    <h3 class="works_subtitle">beauty ROOM 様</h3>
+                    <h3 class="works_subtitle">PENTAROT 様</h3>
                     <dl>
                         <dt>カテゴリ</dt>
-                        <dd>LINEリッチメニュー</dd>
+                        <dd>ロゴ</dd>
                     </dl>
                     <dl>
                         <dt>担当範囲</dt>
@@ -75,17 +84,16 @@
 
                 <h3 class="works_subtitle">制作POINT</h3>
                 <p class="works_detail">
-                    全身脱毛サロンbeauty ROOM様のLINEリッチメニューを制作いたしました。<br>
-                    キャンペーン広告を一番目立たせ、予約を促す工夫をしました。<br>
-                    メニューボタンにはひと言ずつコメントを入れることで、クリックしてもらえるよう工夫しました。
+                    人生を良い方向に導くライトワーカーをイメージした太陽と、<br>
+                    バタフライエフェクトを表す蝶をモチーフにしました。<br>
+                    蝶は太陽に照らされて未来へ向かって羽ばたくイメージで制作いたしました。<br>
+                    カラーは親しみやすさを意識して、明るすぎない落ち着いた色でまとめました。
                 </p>
-
-                <div class="works2_img_2">
-                    <img src="images/linerichmenu1_2@2x.jpg" alt="">
-                </div>
             </div>
-            <a href="./index.html#works" class="backBtn">Back</a>
+
+            <a href="./logo_list.html" class="backBtn">Back</a>
         </div>
+
 
     </main>
 
@@ -121,7 +129,13 @@
             });
             _window.trigger('scroll');
 
-
+            // スライダー
+            $('.logo1_slider').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                arrows: false,
+            });
         });
     </script>
 </body>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sauna resort YUZU｜制作実績　Sakura Ninomiya PORTFOLIO</title>
+    <title>イラスト｜制作実績　Sakura Ninomiya PORTFOLIO</title>
     <meta name="description" content="制作実績の詳細です。">
     <!-- ファビコン -->
     <link rel="shortcut icon" href="favicon.ico">
@@ -20,11 +20,6 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <!-- slick slider読み込み -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -32,20 +27,17 @@
         <div class="header_wrap">
             <nav class="pc_nav">
                 <ul>
-                    <li><a href="#service">Service</a></li>
-                    <li><a href="#works">Works</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./index.html#service">Service</a></li>
+                    <li><a href="./index.html#works">Works</a></li>
                 </ul>
             </nav>
-
             <div class="sp_btn"><span></span></div>
         </div>
 
         <nav class="sp_nav">
             <ul>
-                <li><a href="#service">Service</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="./index.html#service">Service</a></li>
+                <li><a href="./index.html#works">Works</a></li>
             </ul>
         </nav>
     </header>
@@ -53,22 +45,15 @@
     <main>
         <div class="section_inner_works">
             <div id="works_results">
-                <h2 class="works_title">Works</h2>
-
-                <ul class="works6_slider">
-                    <li>
-                        <img src="images/works6_1@2x.jpg" alt="">
-                    </li>
-                    <li>
-                        <img src="images/works6_2@2x.jpg" alt="">
-                    </li>
-                </ul>
-
+                <h2 class="works_title">Illustration</h2>
+                <div class="works6_img">
+                    <img src="images/illust1@2x-100.jpg" alt="">
+                </div>
                 <div class="works_outline">
-                    <h3 class="works_subtitle">Sauna resort YUZU 様</h3>
+                    <h3 class="works_subtitle">イラスト</h3>
                     <dl>
                         <dt>カテゴリ</dt>
-                        <dd>ロゴ</dd>
+                        <dd>イラスト</dd>
                     </dl>
                     <dl>
                         <dt>担当範囲</dt>
@@ -86,11 +71,10 @@
 
                 <h3 class="works_subtitle">制作POINT</h3>
                 <p class="works_detail">
-                    Sauna resort YUZU様のロゴを制作いたしました。<br>
-                    柚子をモチーフにデザインし、また行きたいと思ってもらえるような温かみや安らぎを表現しました。
+                    写真をもとにイラストを描きました。<br>
+                    カラフルでポップな野菜を表現しました。
                 </p>
             </div>
-
             <a href="./index.html#works" class="backBtn">Back</a>
         </div>
 
@@ -128,14 +112,6 @@
                 }
             });
             _window.trigger('scroll');
-
-            // スライダー
-            $('.works6_slider').slick({
-                autoplay: true,
-                autoplaySpeed: 2000,
-                dots: false,
-                arrows: false,
-            });
         });
     </script>
 </body>
